@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Encriptador de Texto</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="container-content">
+        <div class="logo">
+        <h1>Encriptador de Textos</h1>
+          <img src="img/alura.png" alt="">
+        </div>
+
+        <div class="container-text">
+          <textarea class="text-desencriptar" name="inputEncriptar" 
+          id="inputEncriptar" placeholder="Ingrese el texto aquí"></textarea>
+          
+          <p class="alert-disabled">
+            <img src="img/alerta.svg" alt="">
+            Solo letras minúsculas, sin carácteres especiales y sin acentos
+          </p>
+        </div>
+        <div class="container-buttons">
+          <a id="encriptar" class="btn-encriptar">Encriptar</a>
+          <a id="desencriptar" class="btn-desencriptar">Desencriptar</a>
+        </div>
+      </section>
+
+      <section class="container-resultado">
+        <article class="container-text-default">
+          <div class="container-img">
+            <img src="img/search.jpg" alt="">
+          </div>
+          <div class="container-text-encriptado">
+            <p>Ningún mensaje fué encontrado</p>
+            <p class="text-message-normal">
+              Ingrese el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+          <p class="derecho-autor"><a href="https://www.freepik.com/free-vector/seo-concept-illustration_13717663.htm#query=search&position=35&from_view=search&track=sph">Image by storyset</a> on Freepik</p>
+          <div class="autor">
+            Hecho por <a href="http://" target="_blank" rel="noopener noreferrer">Luis Salva Solano</a>
+          </div>
+        </article>
+        <article class="container-context-resultado">
+          <p class="text-message-resultado"></p>
+          <a id="copiar" class="btn-copiar">Copiar</a>
+        </article>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
